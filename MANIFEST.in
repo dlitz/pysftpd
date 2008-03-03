@@ -1,0 +1,1 @@
+include README COPYING NEWS sftp-server.py gen-server-keys.py authconfig.ini.example pysftpd.ini.example

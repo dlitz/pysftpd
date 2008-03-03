@@ -1,0 +1,57 @@
+***********
+* PySFTPd *
+***********
+
+Author: Dwayne C. Litzenberger <dlitz@dlitz.net>
+Homepage: http://www.dlitz.net/software/pysftpd/
+
+PySFTPd is an SFTP server implementation that builds upon Robey Pointer's
+paramiko <http://www.lag.net/paramiko/> secure shell library.
+
+Note: At this time, PySFTPd supports only read-only operation, though you can
+extend it to support read-write operations if you wish.
+
+
+Copyright:
+~~~~~~~~~~
+Copyright (C) 2007-2008  Dwayne C. Litzenberger <dlitz@dlitz.net>
+
+PySFTPd is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+PySFTPd is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Revision History:
+~~~~~~~~~~~~~~~~~
+See the file NEWS for details.
+
+
+Quick Start:
+~~~~~~~~~~~~
+1. Unpack the source distribution.
+
+2. Generate SSH server keys "server_rsa_key" and "server_dss_key"
+
+        ./gen-server-keys.py
+
+3. Copy pysftpd.ini.example to pysftpd.ini and edit it to suit your needs.
+
+4. Copy authconfig.ini.example to authconfig.ini and edit it to suit your
+   needs.
+
+5. Read the usage info for PySFTPd
+
+        ./sftp-server.py --help
+
+5. Start PySFTPd
+
+        ./sftp-server.py -c pysftpd.ini
+

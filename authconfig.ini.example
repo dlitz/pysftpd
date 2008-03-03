@@ -1,0 +1,8 @@
+[anonymous]
+anonymous = true
+root_path = /var/ftpd
+
+[dwon]
+password = $1$XXXXXXXX$oqV205xSKMnljqNTxnZaP.
+root_path = /
+authorized_keys_file = /home/dwon/.ssh/authorized_keys

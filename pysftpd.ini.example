@@ -1,0 +1,6 @@
+[pysftpd]
+auth_config = ./authconfig.ini
+host_key.0 = ./server_rsa_key
+host_key.1 = ./server_dss_key
+listen_host = 
+listen_port = 54321
